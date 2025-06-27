@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Age Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-card">
+            <div class="header">
+                <h1><i class="fas fa-calculator"></i> Age Calculator</h1>
+                <p>Enter your date of birth to calculate your exact age</p>
+            </div>
+            
+            <form id="ageForm" autocomplete="off">
+                <div class="input-group">
+                    <label for="dob"><i class="far fa-calendar-alt"></i> Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required max="">
+                </div>
+                
+                <button type="submit" class="calculate-btn">
+                    <i class="fas fa-calculator"></i> Calculate Age
+                </button>
+            </form>
+            
+            <div class="result-container">
+                <div class="result-card">
+                    <div class="result-item">
+                        <span class="value" id="years">0</span>
+                        <span class="unit">Years</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="value" id="months">0</span>
+                        <span class="unit">Months</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="value" id="days">0</span>
+                        <span class="unit">Days</span>
+                    </div>
+                </div>
+                
+                <div class="additional-info">
+                    <p id="next-birthday"></p>
+                    <p id="birth-day"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
